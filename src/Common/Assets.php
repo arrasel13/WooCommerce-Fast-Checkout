@@ -15,7 +15,7 @@ class Assets extends ModelAssets {
         $this->frontend_script_handles = [
             [
                 'handle'     => 'wcfc-cart',
-                'src'        => WCFC_PUBLIC_ASSETS_URL . 'wcfc-cart.js',
+                'src'        => WCFC_PUBLIC_ASSETS_URL . 'js/wcfc-cart.js',
                 'dependency' => [
                     'jquery'
                 ],
@@ -34,10 +34,16 @@ class Assets extends ModelAssets {
     public function register_frontend_styles() {
         $this->frontend_style_handles = [
             [
+                'handle'     => 'wcfc-font-awsome',
+                'src'        => WCFC_PUBLIC_ASSETS_URL . 'fontawesome/css/fontawesome.css',
+                'dependency' => [],
+                'version'    => rand()
+            ],
+            [
                 'handle'     => 'wcfc-cart',
-                'src'        => WCFC_PUBLIC_ASSETS_URL . 'wcfc-cart.css',
+                'src'        => WCFC_PUBLIC_ASSETS_URL . 'css/wcfc-cart.css',
                 'dependency' => [
-
+                    'wcfc-font-awsome'
                 ],
                 'version'    => rand()
             ]
@@ -47,6 +53,6 @@ class Assets extends ModelAssets {
             wp_register_style( $data['handle'], $data['src'], $data['dependency'], $data['version'] );
         }
 
-        wp_enqueue_style( $this->frontend_style_handles[0]['handle'] );
+        wp_enqueue_style( $this->frontend_style_handles[1]['handle'] );
     }
 }

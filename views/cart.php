@@ -11,9 +11,7 @@
             </div>
             <!-- <button class="wcfc-close-button" id="wcfc-close-button">Close Menu</button> -->
             <button class="fa-solid fa-xmark wcfc-close-button" id="wcfc-close-button"></button>
-
         </div>
-
         <div class="wcfc-empty-content">
             <div class="wcfc-empty-content-wrapper">
                 <div class="wcfc-empty-cart-img">
@@ -61,7 +59,6 @@
                             <span>$50</span>
                         </div>
                     </div>
-
                     <div class="wcfc-single-item">
                         <div class="wcfc-item-image">
                             <div class="wcfc-img-wrapper">
@@ -204,12 +201,6 @@
                 </a>
             </div>
         </div>
-
-
     </div>
     <button class="menu-button" id="open-button">Open Menu</button>
-
-    <div class="content-wrap">
-
-    </div>
 </div><!-- /container -->
