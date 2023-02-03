@@ -1,0 +1,18 @@
+{
+    "name": "cupid/woo-fast-cart",
+    "description": "A wordpress cart plugin for wooocommerce",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "WooFastCart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cupid chakma",
+            "email": "greendaycu20@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
