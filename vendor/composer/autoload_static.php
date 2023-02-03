@@ -24,6 +24,7 @@ class ComposerStaticInitfc1a53ab362435962e01a9b9b4eaf320
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'WooFastCart\\Abstracts\\ModelAssets' => __DIR__ . '/../..' . '/src/Abstracts/ModelAssets.php',
         'WooFastCart\\Common\\Assets' => __DIR__ . '/../..' . '/src/Common/Assets.php',
+        'WooFastCart\\PublicDir\\Cart' => __DIR__ . '/../..' . '/src/PublicDir/Cart.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

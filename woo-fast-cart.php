@@ -22,6 +22,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 use WooFastCart\Common\Assets;
+use WooFastCart\PublicDir\Cart;
 
 final class WCFC {
 
@@ -63,6 +64,7 @@ final class WCFC {
 
     public function initialize_core_services() {
         array_push( $this->container, new Assets() );
+        array_push( $this->container, new Cart() );
         return $this->container;
     }
 }

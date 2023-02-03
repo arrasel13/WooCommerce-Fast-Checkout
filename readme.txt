@@ -1,4 +1,5 @@
 WooCommerce Fast Checkout
+
 Description
 A fast checkout plugin for WooCommerce that helps streamline the checkout process for your customers. With its simple and intuitive design, customers can quickly and easily complete their purchases without having to navigate through multiple pages.
 

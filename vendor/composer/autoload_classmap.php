@@ -9,4 +9,5 @@ return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'WooFastCart\\Abstracts\\ModelAssets' => $baseDir . '/src/Abstracts/ModelAssets.php',
     'WooFastCart\\Common\\Assets' => $baseDir . '/src/Common/Assets.php',
+    'WooFastCart\\PublicDir\\Cart' => $baseDir . '/src/PublicDir/Cart.php',
 );
