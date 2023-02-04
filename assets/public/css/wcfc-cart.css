@@ -24,11 +24,18 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
+    border-bottom: 1px solid #E8E8E8;   
+    max-height: 500px;
+    overflow: scroll;
 }
 
 .wcfc-products .wcfc-product-list{
     border-bottom: 1px solid #E8E8E8;
     padding: 20px 10px 20px 10px;
+}
+
+.wcfc-products .wcfc-product-list:last-child{
+    border-bottom: none;
 }
 
 .wcfc-products .wcfc-product-list .wcfc-product-info{
