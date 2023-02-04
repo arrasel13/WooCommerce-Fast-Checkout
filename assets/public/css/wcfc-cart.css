@@ -28,14 +28,18 @@
 
 .wcfc-products .wcfc-product-list{
     border-bottom: 1px solid #E8E8E8;
-    padding: 30px 10px 30px 10px;
+    padding: 20px 10px 20px 10px;
 }
 
 .wcfc-products .wcfc-product-list .wcfc-product-info{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 25px;
+}
+
+.wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-price{
+    align-self: flex-start;
 }
 
 .wcfc-products .wcfc-product-list .wcfc-product-info img{
@@ -89,6 +93,7 @@
     border: 1px solid #F5F5F5;
     padding: 0px;
     width: 50px;
+    text-align: center;
 }
 
 .wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-info-2{
