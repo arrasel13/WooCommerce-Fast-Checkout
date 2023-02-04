@@ -1,5 +1,20 @@
+.wcfc-overlay {
+    position: fixed;
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: visibleFill; 
+    z-index: 999999999;
+    cursor: default !important;
+}
+
 .wcfc-parent-wrapper{
-    max-width: 350px;
+    max-width: 400px;
     width: 100%;
     background: #FFFFFF;
     position: fixed;
@@ -7,7 +22,7 @@
     right: 0px;
     top: 0px;
     bottom: 0px;
-    z-index: 99999999;
+    z-index: 9999999999;
 }
 
 .wcfc-header{
@@ -90,6 +105,10 @@
     align-items: center;
 }
 
+.wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-info-2 .wcfc-info-group .wcfc-decrement, .wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-info-2 .wcfc-info-group .wcfc-increment{
+    cursor: pointer;
+}
+
 .wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-info-2 .wcfc-info-group input[type="number"]::-webkit-inner-spin-button, 
 .wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-info-2 .wcfc-info-group input[type="number"]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -98,7 +117,7 @@
 
 .wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-info-2 .wcfc-info-group input{
     border: 1px solid #F5F5F5;
-    padding: 0px;
+    padding: 5px;
     width: 50px;
     text-align: center;
 }
@@ -116,10 +135,12 @@
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
+    cursor: pointer;
 }
 
 .wcfc-header li.wcfc-item-3{
     padding: 5px 0px 0px 0px;
+    cursor: pointer;
 }
 
 .wcfc-parent-wrapper .wcfc-header li h2{
