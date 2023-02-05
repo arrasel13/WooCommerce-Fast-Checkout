@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../Inter-font-family/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('../Inter-font-family/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .wcfc-overlay {
     position: fixed;
     display: block; 
@@ -14,6 +22,7 @@
 }
 
 .wcfc-parent-wrapper{
+    font-family: 'Inter', sans-serif;
     max-width: 400px;
     width: 100%;
     background: #FFFFFF;
