@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+.wcfc-parent-wrapper.wfc-hide, .wcfc-overlay.wfc-hide{
+    display: none;
+}
+
 .wcfc-overlay {
     position: fixed;
     display: block; 
@@ -477,6 +481,24 @@
 .wcfc-view-cart-btn:hover {
     background-color: #2BC31A;
 }
+
 .wcfc-view-cart-btn:hover a {
     color: #FFF;
+}
+
+.wfc-cart-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px 20px;
+    position: fixed;
+    max-width: 64px;
+    max-height: 64px;
+    width: 100%;
+    height: 100%;
+    right: 40px;
+    bottom: 40px;
+    background-color: #2BC31A;
+    cursor: pointer;
 }
