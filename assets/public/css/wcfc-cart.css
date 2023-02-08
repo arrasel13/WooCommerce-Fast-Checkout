@@ -22,8 +22,8 @@
     background-color: rgba(0,0,0,0.5);
     pointer-events: visibleFill; 
     z-index: 9999999999;
-    opacity: 1;
-    transition: opacity 1s;
+    animation: cart_animation_in 0.3s;
+    animation-timing-function: ease-in-out;
     cursor: default !important;
 }
 
@@ -37,8 +37,8 @@
     right: 0px;
     top: 0px;
     bottom: 0px;
-    opacity: 1;
-    transition: opacity 1s;
+    animation: cart_animation_in 0.3s;
+    animation-timing-function: ease-in-out;
     z-index: 9999999999;
     overflow-y: scroll;
 }
@@ -505,4 +505,9 @@
     bottom: 40px;
     background-color: #2BC31A;
     cursor: pointer;
+}
+
+@keyframes cart_animation_in{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
 }
