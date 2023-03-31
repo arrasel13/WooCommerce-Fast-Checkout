@@ -1,6 +1,7 @@
 <?php
 
 namespace WooFastCart\PublicDir;
+use WooFastCart\Common\TemplateLoader;
 
 class Cart {
     public function __construct() {
@@ -8,6 +9,6 @@ class Cart {
     }
 
     public function render_cart_markup() {
-        require_once WCFC_VIEWS_PATH . 'cart.php';
+        WCFC()->container[TemplateLoader::class]->setAbsolutePath('views')->setFileName('cart.php')->renderTemplate(true);
     }
 }

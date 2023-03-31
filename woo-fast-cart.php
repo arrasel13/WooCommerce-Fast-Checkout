@@ -65,12 +65,17 @@ final class WCFC {
 
     public function initialize_core_services() {
         $this->classes = [
-            'WooFastCart\Common\CartAssets',
-            'WooFastCart\PublicDir\Cart'
+            'WooFastCart\Common\CartAssets'     => '',
+            'WooFastCart\PublicDir\Cart'        => '',
+            'WooFastCart\Common\TemplateLoader' => 'init'
         ];
 
-        foreach ( $this->classes as $class ) {
-            array_push( $this->container, new $class() );
+        foreach ( $this->classes as $class => $method  ) {
+            if( ! empty( $method ) ) {
+                $this->container[$class] = $class::$method();
+            } else {
+                $this->container[$class] = new $class();
+            }
         }
 
         return $this->container;

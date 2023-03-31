@@ -9,6 +9,7 @@ return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'WooFastCart\\Abstracts\\ModelAssets' => $baseDir . '/src/Abstracts/ModelAssets.php',
     'WooFastCart\\Common\\CartAssets' => $baseDir . '/src/Common/CartAssets.php',
+    'WooFastCart\\Common\\TemplateLoader' => $baseDir . '/src/Common/TemplateLoader.php',
     'WooFastCart\\Interfaces\\AdminAssetInterface' => $baseDir . '/src/Interfaces/AdminAssetInterface.php',
     'WooFastCart\\Interfaces\\FrontAssetInterface' => $baseDir . '/src/Interfaces/FrontAssetInterface.php',
     'WooFastCart\\PublicDir\\Cart' => $baseDir . '/src/PublicDir/Cart.php',
