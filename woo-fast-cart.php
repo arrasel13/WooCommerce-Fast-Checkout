@@ -65,7 +65,7 @@ final class WCFC {
 
     public function initialize_core_services() {
         $this->classes = [
-            'WooFastCart\Common\Assets',
+            'WooFastCart\Common\CartAssets',
             'WooFastCart\PublicDir\Cart'
         ];
 
