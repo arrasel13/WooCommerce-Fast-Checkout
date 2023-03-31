@@ -6,6 +6,8 @@ class TemplateLoader{
 
     static $instance = null;
 
+    static $counter = 0;
+
     static $file_name;
 
     static $file_path;
@@ -27,7 +29,7 @@ class TemplateLoader{
     public static function init() {
         if( self::$instance == null ) {
             self::$instance = new self();
-        }     
+        }
         return self::$instance;
     }
 
