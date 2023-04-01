@@ -27,7 +27,7 @@ class ComposerStaticInitfc1a53ab362435962e01a9b9b4eaf320
         'WooFastCart\\Common\\TemplateLoader' => __DIR__ . '/../..' . '/src/Common/TemplateLoader.php',
         'WooFastCart\\Interfaces\\AdminAssetInterface' => __DIR__ . '/../..' . '/src/Interfaces/AdminAssetInterface.php',
         'WooFastCart\\Interfaces\\FrontAssetInterface' => __DIR__ . '/../..' . '/src/Interfaces/FrontAssetInterface.php',
-        'WooFastCart\\PublicDir\\Cart' => __DIR__ . '/../..' . '/src/PublicDir/Cart.php',
+        'WooFastCart\\PublicModule\\Cart' => __DIR__ . '/../..' . '/src/PublicModule/Cart.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

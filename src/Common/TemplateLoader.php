@@ -38,12 +38,12 @@ class TemplateLoader {
         }
     }
 
-    public function setFileName( $filename2, $folderName = '' ) {
-        if ( ! empty( $filename2 ) && ! empty( $folderName ) ) {
-            self::$file_name                  = $filename2;
+    public function setFileName( $inputFileName, $folderName = '' ) {
+        if ( ! empty( $inputFileName ) && ! empty( $folderName ) ) {
+            self::$file_name                  = $inputFileName;
             self::$filename[self::$file_name] = $folderName . '/' . self::$file_name;
         } else {
-            self::$file_name                  = $filename2;
+            self::$file_name                  = $inputFileName;
             self::$filename[self::$file_name] = self::$file_name;
         }
         return $this;

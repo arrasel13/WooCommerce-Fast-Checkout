@@ -1,6 +1,6 @@
 <?php
 
-namespace WooFastCart\PublicDir;
+namespace WooFastCart\PublicModule;
 use WooFastCart\Common\TemplateLoader;
 
 class Cart {

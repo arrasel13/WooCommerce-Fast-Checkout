@@ -12,5 +12,5 @@ return array(
     'WooFastCart\\Common\\TemplateLoader' => $baseDir . '/src/Common/TemplateLoader.php',
     'WooFastCart\\Interfaces\\AdminAssetInterface' => $baseDir . '/src/Interfaces/AdminAssetInterface.php',
     'WooFastCart\\Interfaces\\FrontAssetInterface' => $baseDir . '/src/Interfaces/FrontAssetInterface.php',
-    'WooFastCart\\PublicDir\\Cart' => $baseDir . '/src/PublicDir/Cart.php',
+    'WooFastCart\\PublicModule\\Cart' => $baseDir . '/src/PublicModule/Cart.php',
 );

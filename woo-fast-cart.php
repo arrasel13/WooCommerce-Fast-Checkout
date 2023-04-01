@@ -21,8 +21,6 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use WooFastCart\PublicDir\Cart;
-
 final class WCFC {
 
     static $singleton = null;
@@ -66,12 +64,12 @@ final class WCFC {
     public function initialize_core_services() {
         $this->classes = [
             'WooFastCart\Common\CartAssets'     => '',
-            'WooFastCart\PublicDir\Cart'        => '',
+            'WooFastCart\PublicModule\Cart'     => '',
             'WooFastCart\Common\TemplateLoader' => 'init'
         ];
 
-        foreach ( $this->classes as $class => $method  ) {
-            if( ! empty( $method ) ) {
+        foreach ( $this->classes as $class => $method ) {
+            if ( ! empty( $method ) ) {
                 $this->container[$class] = $class::$method();
             } else {
                 $this->container[$class] = new $class();
