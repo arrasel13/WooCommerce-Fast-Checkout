@@ -503,8 +503,28 @@
     height: 100%;
     right: 40px;
     bottom: 40px;
-    background-color: #2BC31A;
+    background-color: skyblue;
     cursor: pointer;
+}
+
+.wfc-cart-wrapper .wfc-cart-count{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFF;
+    background-color: black;
+    padding: 7px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    bottom: 45px;
+    top:auto;
+    left: auto;
 }
 
 @keyframes cart_animation_in{
