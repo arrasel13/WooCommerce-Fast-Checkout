@@ -10,6 +10,7 @@ return array(
     'WooFastCart\\Abstracts\\ModelAssets' => $baseDir . '/src/Abstracts/ModelAssets.php',
     'WooFastCart\\Common\\CartAssets' => $baseDir . '/src/Common/CartAssets.php',
     'WooFastCart\\Common\\TemplateLoader' => $baseDir . '/src/Common/TemplateLoader.php',
+    'WooFastCart\\Exceptions\\TemplateException' => $baseDir . '/src/Exceptions/TemplateException.php',
     'WooFastCart\\Interfaces\\AdminAssetInterface' => $baseDir . '/src/Interfaces/AdminAssetInterface.php',
     'WooFastCart\\Interfaces\\FrontAssetInterface' => $baseDir . '/src/Interfaces/FrontAssetInterface.php',
     'WooFastCart\\PublicModule\\Cart' => $baseDir . '/src/PublicModule/Cart.php',

@@ -1,6 +1,8 @@
 <?php
 
 namespace WooFastCart\Common;
+use Elementor\Data\V2\Base\Exceptions\WP_Error_Exception;
+use WooFastCart\Exceptions\TemplateException;
 
 class TemplateLoader {
 
@@ -32,26 +34,52 @@ class TemplateLoader {
     }
 
     public function setAbsolutePath( $path ) {
-        if ( isset( self::$file_paths[$path] ) ) {
+        try{
+            if ( ! isset( self::$file_paths[$path] ) ) {
+                throw new TemplateException('Folder Path '.$path.' Does Not Exist ! Available Paths Values Are "views, assets, admin-assets, front-assets, src, src-admin, src-public"');
+            }
             self::$file_path = $path;
             return $this;
+        } catch( TemplateException $e) {
+            throw new \Exception( $e->getMessage() );
         }
+       
     }
 
     public function setFileName( $inputFileName, $folderName = '' ) {
-        if ( ! empty( $inputFileName ) && ! empty( $folderName ) ) {
+        try{
+            if( empty( $inputFileName ) ) {
+                throw new TemplateException("File Name Must Not Be Empty !");
+            }
+
+            if( ! isset( explode( '.',$inputFileName )[1] ) ) {
+                throw new TemplateException("PHP Extension Missing !");
+            }
+
+            if( explode( '.',$inputFileName )[1] !== 'php' ) {
+                throw new TemplateException("Filename Must Contain PHP extension !");
+            }
+
             self::$file_name                  = $inputFileName;
             self::$filename[self::$file_name] = $folderName . '/' . self::$file_name;
-        } else {
-            self::$file_name                  = $inputFileName;
-            self::$filename[self::$file_name] = self::$file_name;
+
+            return $this;
+        } catch( TemplateException $e ) {
+            throw new \Exception( $e->getMessage() );
         }
-        return $this;
+       
     }
 
     public function renderTemplate( $value ) {
         if ( $value === true ) {
-            require_once self::$file_paths[self::$file_path] . self::$filename[self::$file_name];
+            try{
+                if( ! file_exists( self::$file_paths[self::$file_path] . self::$filename[self::$file_name] ) ) {
+                    throw new TemplateException("File Does Not Exist");
+                }
+                require_once self::$file_paths[self::$file_path] . self::$filename[self::$file_name];
+            } catch( TemplateException $e ) {
+                throw new \Exception( $e->getMessage() );
+            }
         }
     }
 }

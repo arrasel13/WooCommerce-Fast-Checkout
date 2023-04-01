@@ -25,6 +25,7 @@ class ComposerStaticInitfc1a53ab362435962e01a9b9b4eaf320
         'WooFastCart\\Abstracts\\ModelAssets' => __DIR__ . '/../..' . '/src/Abstracts/ModelAssets.php',
         'WooFastCart\\Common\\CartAssets' => __DIR__ . '/../..' . '/src/Common/CartAssets.php',
         'WooFastCart\\Common\\TemplateLoader' => __DIR__ . '/../..' . '/src/Common/TemplateLoader.php',
+        'WooFastCart\\Exceptions\\TemplateException' => __DIR__ . '/../..' . '/src/Exceptions/TemplateException.php',
         'WooFastCart\\Interfaces\\AdminAssetInterface' => __DIR__ . '/../..' . '/src/Interfaces/AdminAssetInterface.php',
         'WooFastCart\\Interfaces\\FrontAssetInterface' => __DIR__ . '/../..' . '/src/Interfaces/FrontAssetInterface.php',
         'WooFastCart\\PublicModule\\Cart' => __DIR__ . '/../..' . '/src/PublicModule/Cart.php',
