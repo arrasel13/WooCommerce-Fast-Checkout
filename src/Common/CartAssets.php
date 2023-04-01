@@ -4,9 +4,21 @@ namespace WooFastCart\Common;
 use WooFastCart\Abstracts\ModelAssets;
 use WooFastCart\Interfaces\FrontAssetInterface;
 
-class CartAssets extends ModelAssets implements FrontAssetInterface{
+class CartAssets extends ModelAssets implements FrontAssetInterface {
 
-    public function initialize_asset_paths(){
+    public function __construct() {
+        $this->initialize_asset_paths();
+        $this->initalize_sctipt_hooks();
+    }
+
+    public function initalize_sctipt_hooks() {
+        if ( ! is_admin() ) {
+            add_action( 'wp_enqueue_scripts', [$this, 'register_frontend_scripts'], 10 );
+            add_action( 'wp_enqueue_scripts', [$this, 'register_frontend_styles'], 10 );
+        }
+    }
+
+    public function initialize_asset_paths() {
         $this->frontend_script_handles = [
             [
                 'handle'     => 'wcfc-cart',
