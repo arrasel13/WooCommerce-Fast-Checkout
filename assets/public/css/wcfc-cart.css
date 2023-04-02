@@ -22,13 +22,12 @@
     background-color: rgba(0,0,0,0.5);
     pointer-events: visibleFill; 
     z-index: 9999999999;
-    animation: cart_animation_in 0.3s;
-    animation-timing-function: ease-in-out;
     cursor: default !important;
 }
 
 .wcfc-parent-wrapper{
     font-family: 'Inter', sans-serif;
+    display: block;
     max-width: 400px;
     width: 100%;
     background: #FFFFFF;
@@ -37,8 +36,6 @@
     right: 0px;
     top: 0px;
     bottom: 0px;
-    animation: cart_animation_in 0.3s;
-    animation-timing-function: ease-in-out;
     z-index: 9999999999;
     overflow-y: scroll;
 }
@@ -503,7 +500,7 @@
     height: 100%;
     right: 40px;
     bottom: 40px;
-    background-color: skyblue;
+    background-color: #2BC31A;
     cursor: pointer;
 }
 
@@ -530,4 +527,9 @@
 @keyframes cart_animation_in{
     0% {opacity: 0;}
     100%{opacity: 1;}
+}
+
+@keyframes cart_animation_out{
+    0% {opacity: 1;}
+    100%{opacity: 0;}
 }
