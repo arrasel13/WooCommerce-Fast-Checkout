@@ -127,6 +127,12 @@
     margin: 0px;
 }
 
+.wcfc-products .wcfc-product-list .wcfc-product-info img{
+    height: auto !important;
+    max-width: 100% !important;
+    width: 100px !important;
+}
+
 .wcfc-products .wcfc-product-list .wcfc-product-info .wcfc-product-price{
     font-weight: 500;
     font-size: 15px;
@@ -251,7 +257,7 @@
 }
 
 .wcfc-shipping-method h2{
-    margin: 0;
+    margin: 0 0 15px 0;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -279,8 +285,8 @@
     align-items: center;
 }
 
-.wcfc-shipping-option label:first-child{
-    margin: 10px 0;
+.wcfc-shipping-option label{
+    margin: 5px 0;
 }
 
 .wcfc-radio__input{

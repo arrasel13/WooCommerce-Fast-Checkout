@@ -67,12 +67,13 @@ class TemplateLoader {
         }
     }
 
-    public function renderTemplate( $value ) {
+    public function renderTemplate( $value, $args = [] ) {
         if ( $value === true ) {
             try {
                 if ( ! file_exists( self::$file_paths[self::$file_path] . self::$filename[self::$file_name] ) ) {
                     throw new TemplateException( "File Does Not Exist" );
                 }
+                extract( $args );
                 require_once self::$file_paths[self::$file_path] . self::$filename[self::$file_name];
             } catch ( TemplateException $e ) {
                 throw new \Exception( $e->getMessage() );
